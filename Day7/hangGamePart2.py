@@ -12,12 +12,7 @@ for ii in range(0,len(findingName)):
             newlist[index] = element
         index += 1
     print(newlist)
-bool=True
-for ii in newlist:
-    if ii =="_":
-        bool=False
-        break
-if bool:
-    print("You Win :)")
-else:
+if "_" in newlist:
     print("You lose :(")
+else:
+    print("You Win :)")
