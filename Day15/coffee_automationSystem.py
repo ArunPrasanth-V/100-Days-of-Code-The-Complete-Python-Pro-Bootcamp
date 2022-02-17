@@ -68,7 +68,6 @@ def make_coffee(drinkname, orderedingredient):
         resource[item] -= orderedingredient[item]
     print(f"Here is your {drinkname}")
 
-
 is_on = True
 while is_on:
     choice = input("what would you like? (espresso/latte/cappuccino): ")
