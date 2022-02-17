@@ -7,9 +7,8 @@ screen= Screen()
 screen.setup(width=600,height=600)
 screen.tracer(0)
 
-
-player= Player()
-car_manager= CarManager()
+player = Player()
+car_manager = CarManager()
 
 screen.listen()
 screen.onkey(player.mov_up,"Up")
@@ -30,6 +29,5 @@ while game_is_on:
     if player.is_at_finish_line():
         player.go_to_start()
         car_manager.level_up()
-
 
 screen.exitonclick()
